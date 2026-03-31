@@ -13,16 +13,6 @@ AutoPrice ML is a predictive machine learning pipeline designed to estimate the 
 * **Data Processing:** Pandas, NumPy
 * **Machine Learning:** Scikit-Learn (Random Forest Regressor)
 
-### Methodology
-1. **Data Cleaning & Imputation:** Handled missing continuous variables (mileage) using median imputation and missing categorical variables (cylinders, doors) using mode imputation.
-2. **Feature Engineering:** Transformed raw text data (make, model, trim, color) into a machine-readable format using **One-Hot Encoding**, expanding the feature space to 887 distinct binary columns.
-3. **Model Training:** Deployed a Random Forest Regressor using 100 decision trees to capture non-linear relationships between vehicle specs and price.
-
-### How to Run Locally
-1. Clone this repository.
-2. Install the required dependencies: `pip install pandas numpy scikit-learn`
-3. Run `python 4_train_model.py` to train the regression model and output the MAE and R2 metrics.
-
 ## Author
 Kamal P
 GitHub: https://github.com/15-Kamal
