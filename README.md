@@ -1,4 +1,4 @@
-# AutoPrice-ML: Vehicle Price Prediction using Regression Model
+# AutoPrice ML: Vehicle Price Prediction using Regression Model
 
 ### Overview
 AutoPrice ML is a predictive machine learning pipeline designed to estimate the market value of vehicles based on their specifications. This project demonstrates proficiency in handling continuous target variables (Regression), data imputation, and high-dimensional feature encoding.
