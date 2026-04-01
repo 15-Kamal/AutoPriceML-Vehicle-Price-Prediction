@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 import time
+import joblib
 
 # --- 1. Load the Data ---
 print("1. Loading machine-learning-ready dataset...")
@@ -46,3 +47,9 @@ print(f"R-squared Score (R2): {r2:.4f}")
 print("\n--- WHAT THIS MEANS ---")
 print(f"- On average, the AI's price predictions are off by ${mae:,.0f}.")
 print(f"- The AI has successfully learned {r2*100:.1f}% of the patterns that drive vehicle prices in this dataset.")
+
+# --- 6. SAVE MODEL AND COLUMNS FOR STREAMLIT ---
+print("\nSaving the model and column structure for the web app...")
+joblib.dump(model, 'price_model.pkl')
+joblib.dump(X.columns, 'model_columns.pkl') # We must save the 887 column names!
+print(" Saved 'price_model.pkl' and 'model_columns.pkl'!")
