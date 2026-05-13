@@ -1,5 +1,14 @@
+# Web Framework
 streamlit
-joblib
-scikit-learn
+
+# Data Manipulation
 pandas
 numpy
+
+# Machine Learning & Pipeline
+scikit-learn
+joblib
+
+# Visualization (Required if running the Jupyter Notebook)
+matplotlib
+seaborn

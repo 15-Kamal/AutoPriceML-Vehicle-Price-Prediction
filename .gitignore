@@ -1,9 +1,21 @@
-# Ignore the virtual environment
+# 1. Virtual Environments
 venv/
 
-# Ignore Python cache files
+# 2. Python Caches
 __pycache__/
 *.pyc
+*.pyo
 
-# Ignore dataset files (Keeps your GitHub repository lightweight and professional)
+# 3. IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 4. Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# 5. Raw Data (Keep GitHub clean)
+# We ignore the heavy raw CSV dataset...
 *.csv
+data/car_prices.csv
