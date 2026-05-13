@@ -8,9 +8,6 @@ __pycache__/
 
 # 3. IDE & Editor Files
 .vscode/
-.idea/
-*.swp
-.DS_Store
 
 # 4. Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
